@@ -1,5 +1,20 @@
-PARA ACESSAR O PROJETO:
+## 🚀 COMO ACESSAR O PROJETO
 
-1 - TENHA O MySqlWorkbench E IMPORTE O ARQUIVO biblioteca.sql
-2 - COLOQUE O ARQUIVO poo.py EM ALGUM INTERPRETADOR DE CÓDIGO (EXEMPLO: VISUAL STUDIO CODE)
-3 - NÃO ESQUEÇA DE ALTERAR NO CÓDIGO poo.py A SENHA DO BANCO DE DADOS PARA A SENHA DO SEU MySqlWorkbench (CASO TENHA SENHA) E SE FOR PRECISAR ALTERAR O NOME TAMBÉM, MAS ESTÁ COMO "root" QUE É O NOME PADRÃO
+### ✅ Passos:
+
+1️⃣ **Tenha o [MySQL Workbench](https://www.mysql.com/products/workbench/)** instalado e **importe o arquivo `biblioteca.sql`** no seu banco de dados.
+
+2️⃣ **Abra o arquivo `poo.py` em um interpretador de código** como o **Visual Studio Code**, **PyCharm** ou outro de sua preferência.
+
+3️⃣ **⚠️ ATENÇÃO:**  
+   No arquivo `poo.py`, **altere a senha do banco de dados** para a **sua senha do MySQL Workbench**, se houver.  
+   O usuário padrão está como `"root"`, mas você pode alterar se necessário.
+
+```python
+# Exemplo de onde alterar no código:
+conexao = mysql.connector.connect(
+    host="localhost",
+    user="root",          # <- Você pode trocar "root" por outro nome
+    password="SUA_SENHA", # <- Substitua pela sua senha do MySQL
+    database="biblioteca"
+)
