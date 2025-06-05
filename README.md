@@ -12,7 +12,8 @@
 
 ```python
 # Exemplo de onde alterar no código:
-conexao = mysql.connector.connect(
+def conectar():
+    return mysql.connector.connect(
     host="localhost",
     user="root",          # <- Você pode trocar "root" por outro nome
     password="SUA_SENHA", # <- Substitua pela sua senha do MySQL
